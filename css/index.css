@@ -5,6 +5,7 @@ body{
 }
 
 .container {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,6 +14,8 @@ body{
   }
   
   .logo {
+    margin-left: 50px;
+    margin-top: 20px;
     width: 20%;
   }
   
@@ -23,51 +26,68 @@ body{
   .forms {
     width: 70%;
     display: flex;
-    flex-direction: column;
+    
+    /* flex-direction: row; */
+    
+    justify-content: end;
   }
   
   .login-form {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    align-items: center;
   }
   
-  .form-group {
-    flex-basis: 100%;
-    margin-bottom: 10px;
+
+  .email-group{
+    align-self: flex-start;
+    display: flex;
+   flex-direction: column;
+    margin-right: 20px;
   }
-  
-  .form-group label {
+  .password-group{
+    display: flex;
+   flex-direction: column;
+    margin-right: 20px;
+  }
+  .email-group label, .password-group label {
     font-weight: bold;
-    display: block;
+    color: white;
+    font-size: 17px;
   }
   
-  .form-group input[type="email"],
-  .form-group input[type="password"] {
-    padding: 10px;
+  .email-group input[type="text"],
+  .password-group input[type="password"] {
+    padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border-color: transparent;
+    outline: none;
     flex-grow: 1;
   }
   
-  .form-group button[type="submit"] {
+  .submit-group button[type="submit"] {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #1e4166;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
   }
   
   .forgot-link {
-    text-align: right;
-    margin-top: 10px;
-    text-align: center;
+    
+    margin-top: 5px;
+    text-align: end;
+    size: 10px;
+    margin-right: 40px;
   }
   
   .forgot-link a {
-    color: #007bff;
+    color: white;
     text-decoration: none;
-   
+    size: 5px;
+   font-weight: 300;
+   font-size: 12px;
   }
   
