@@ -4,17 +4,70 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
     background-color: #3B5999;
-    width: 60%;
-    margin: auto;
-    
-}
-
-.logo_area{
-    float: left;
-
-}
-.submit_area{
-    float: left;
-}
+  }
+  
+  .logo {
+    width: 20%;
+  }
+  
+  .logo img {
+    max-width: 100%;
+  }
+  
+  .forms {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+  }
+  
+  .form-group button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .forgot-link {
+    text-align: right;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .forgot-link a {
+    color: #007bff;
+    text-decoration: none;
+   
+  }
+  
