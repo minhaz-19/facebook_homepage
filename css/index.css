@@ -109,7 +109,7 @@ body{
 
   .right_part{
     width: 50%;
-    
+
    margin-left: 150px;
     display: flex;
     flex-direction: column;
@@ -124,27 +124,24 @@ body{
     margin-top: 5px;
   }
   
+
   .input-details input{
     padding: 5px;
-    margin: 5px;
+    margin-bottom: 5px;
     border-radius: 5px;
     border-color: transparent;
     outline: 1px solid;
     flex-grow: 1;
-    width: 100%;
-  }
-
-  .name{
-    display: flex;
-    
-  }
-  .input-details{
     max-width: 100%;
-  }
-
-  .mobile_or_email input , .new_password input{
     width: 100%;
-
+    box-sizing: border-box;
   }
 
+.name{
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
   
